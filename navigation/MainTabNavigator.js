@@ -6,7 +6,6 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import FuelScreen from '../screens/FuelScreen';
-import SettingsScreen from '../screens/SettingsScreen';
 import AboutScreen from '../screens/AboutScreen';
 
 const HomeStack = createStackNavigator({
@@ -37,20 +36,6 @@ ProfileStack.navigationOptions = {
         <TabBarIcon
             focused={focused}
             name={Platform.OS === 'ios' ? `ios-person${focused ? '' : '-outline'}` : 'md-person'}
-        />
-    ),
-};
-
-const SettingsStack = createStackNavigator({
-    Settings: SettingsScreen,
-});
-
-SettingsStack.navigationOptions = {
-    tabBarLabel: 'Configurações',
-    tabBarIcon: ({focused}) => (
-        <TabBarIcon
-            focused={focused}
-            name={Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options'}
         />
     ),
 };

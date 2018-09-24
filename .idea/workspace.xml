@@ -25,43 +25,6 @@
       <change afterPath="$PROJECT_DIR$/screens/AboutScreen.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/screens/FuelScreen.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/screens/ProfileScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/.idea/dictionaries/linco.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/bicycle_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_button_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_selected_burger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_selected_house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_selected_ice_cream.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_selected_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_unselected_burger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_unselected_house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_unselected_ice_cream.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/blue_unselected_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/cheese_burger_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/gray_button_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/gray_selected_bike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/gray_selected_house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/green_button_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/green_selected_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/green_unselected_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/house_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/ice_cream_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/money_bag_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/neutral_button_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_button_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_selected_burger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_selected_house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_selected_ice_cream.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_selected_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_unselected_burger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_unselected_house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_unselected_ice_cream.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/purple_unselected_money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/white_unselected_bike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/icons/white_unselected_house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/json/places.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Projetos/gasosa/assets/themes/themes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,8 +38,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App.js">
+      <file leaf-file-name="ProfileScreen.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screens/ProfileScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabBarIcon.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/TabBarIcon.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <folding>
@@ -86,52 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screens/ProfileScreen.js">
+      <file leaf-file-name="StyledText.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/StyledText.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="firestore.rules" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firestore.rules">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="firestore.indexes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firestore.indexes.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="firebase.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firebase.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="database.rules.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database.rules.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="AboutScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screens/AboutScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainTabNavigator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navigation/MainTabNavigator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+            <state>
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -139,11 +72,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="79">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="react-native-implementation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutScreen.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/screens/AboutScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FuelScreen.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screens/FuelScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeScreen.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTabNavigator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navigation/MainTabNavigator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -174,14 +161,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/screens/FuelScreen.js" />
-        <option value="$PROJECT_DIR$/screens/HomeScreen.js" />
         <option value="$PROJECT_DIR$/screens/FireBase.js" />
         <option value="$PROJECT_DIR$/FirebaseLogin/screens/Register/index.js" />
         <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/screens/ProfileScreen.js" />
-        <option value="$PROJECT_DIR$/screens/AboutScreen.js" />
         <option value="$PROJECT_DIR$/navigation/MainTabNavigator.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/screens/ProfileScreen.js" />
+        <option value="$PROJECT_DIR$/screens/HomeScreen.js" />
+        <option value="$PROJECT_DIR$/screens/FuelScreen.js" />
+        <option value="$PROJECT_DIR$/screens/AboutScreen.js" />
       </list>
     </option>
   </component>
@@ -236,24 +224,12 @@
             <path>
               <item name="gasosa" type="b2602c69:ProjectViewProjectNode" />
               <item name="gasosa" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosa" type="462c0819:PsiDirectoryNode" />
-              <item name="FirebaseLogin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosa" type="462c0819:PsiDirectoryNode" />
-              <item name="FirebaseLogin" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosa" type="462c0819:PsiDirectoryNode" />
-              <item name="FirebaseLogin" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosa" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gasosa" type="b2602c69:ProjectViewProjectNode" />
@@ -273,7 +249,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projetos/gasosa" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -324,26 +300,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537746522215</updated>
-      <workItem from="1537746523389" duration="11906000" />
+      <workItem from="1537746523389" duration="15624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11906000" />
+    <option name="totallyTimeSpent" value="15624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3292683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -362,15 +338,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/TabBarIcon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screens/LinksScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -387,31 +354,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screens/FuelScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screens/FireBase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#361#405#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -479,64 +426,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screens/SettingsScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screens/AboutScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/AppNavigator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/MainTabNavigator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screens/ProfileScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,8 +442,105 @@
     <entry file="file://$PROJECT_DIR$/firebase.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/screens/SettingsScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database.rules.json">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/react-native/react-native-implementation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/TabBarIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/StyledText.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/AppNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/MainTabNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screens/ProfileScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screens/FuelScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screens/AboutScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

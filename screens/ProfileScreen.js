@@ -1,6 +1,7 @@
 import firebase from "firebase";
 import FirebaseLogin from "../FirebaseLogin";
 import React, {Component} from "react";
+import {StyleSheet, View} from 'react-native';
 
 const config = {
     apiKey: "AIzaSyDvVRO8vCXlSTbV1u5Xq20wQUv13FLR_tw",
@@ -13,10 +14,23 @@ const config = {
 firebase.initializeApp(config);
 
 export default class ProfileScreen extends Component {
+    static navigationOptions = {
+        title: null, header: null
+    };
+
     render() {
         return (
-            <FirebaseLogin login={user => console.warn(user)}
-            />
+            <View style = {styles.container}>
+                <FirebaseLogin login={user => console.warn(user)}
+                />
+            </View>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+    },
+});
