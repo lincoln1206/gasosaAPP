@@ -3,16 +3,17 @@ import {Platform} from 'react-native';
 import {createBottomTabNavigator, createStackNavigator} from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
+import MapScreen from '../screens/MapScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import FuelScreen from '../screens/FuelScreen';
 import AboutScreen from '../screens/AboutScreen';
+import TesteScreen from '../screens/TesteScreen';
 
-const HomeStack = createStackNavigator({
-    Home: HomeScreen,
+const MapStack = createStackNavigator({
+    Map: MapScreen,
 });
 
-HomeStack.navigationOptions = {
+MapStack.navigationOptions = {
     tabBarLabel: 'Mapa',
     tabBarIcon: ({focused}) => (
         <TabBarIcon
@@ -27,7 +28,7 @@ HomeStack.navigationOptions = {
 };
 
 const ProfileStack = createStackNavigator({
-    Links: ProfileScreen,
+    Profile: ProfileScreen,
 });
 
 ProfileStack.navigationOptions = {
@@ -41,7 +42,7 @@ ProfileStack.navigationOptions = {
 };
 
 const FuelStack = createStackNavigator({
-    Settings: FuelScreen,
+    Fuel: FuelScreen,
 });
 
 FuelStack.navigationOptions = {
@@ -55,7 +56,7 @@ FuelStack.navigationOptions = {
 };
 
 const AboutStack = createStackNavigator({
-    Settings: AboutScreen,
+    About: AboutScreen,
 });
 
 AboutStack.navigationOptions = {
@@ -68,8 +69,22 @@ AboutStack.navigationOptions = {
     ),
 };
 
+const TesteStack = createStackNavigator({
+    Teste: TesteScreen,
+});
+
+TesteStack.navigationOptions = {
+    tabBarLabel: 'Sobre',
+    tabBarIcon: ({focused}) => (
+        <TabBarIcon
+            focused={focused}
+            name={Platform.OS === 'ios' ? `ios-information-circle${focused ? '' : '-outline'}` : 'md-information-circle'}
+        />
+    ),
+};
+
 export default createBottomTabNavigator({
-    HomeStack,
+    MapStack,
     FuelStack,
     ProfileStack,
     AboutStack

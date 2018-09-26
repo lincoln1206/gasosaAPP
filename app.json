@@ -24,12 +24,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.oldsoft.gasosa",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAGxgKA5AO8z5JZXUMrhwDIDhPdYHoGZZg"
+      }
     },
     "android": {
+      "package": "com.oldsoft.gasosa",
       "config": {
         "googleMaps": {
-          "apiKey": "<AIzaSyAGxgKA5AO8z5JZXUMrhwDIDhPdYHoGZZg>"
+          "apiKey": "AIzaSyAGxgKA5AO8z5JZXUMrhwDIDhPdYHoGZZg"
         }
       },
       "permissions": [
