@@ -1,50 +1,71 @@
-import firebase from "firebase";
-import FirebaseLogin from "../FirebaseLogin";
-import React, {Component} from "react";
-import {StyleSheet, View} from 'react-native';
+import React from 'react';
+import {StyleSheet, Text} from 'react-native'
+import {Button, Container, Form, Label} from 'native-base'
+import firebase from 'firebase';
+import {h, totalSize, w} from '../constants/Layout';
 
-export default class ProfileScreen extends Component {
+export default class ProfileScreen extends React.Component {
+
     static navigationOptions = {
-        title: null, header: null
+        title: null, header: null,
     };
 
-    state = {loggedIn: null};
-
-    componentWillMount() {
-        if (!firebase.apps.length) {
-            firebase.initializeApp({
-                apiKey: "AIzaSyDvVRO8vCXlSTbV1u5Xq20wQUv13FLR_tw",
-                authDomain: "gasosa-6a891.firebaseapp.com",
-                databaseURL: "https://gasosa-6a891.firebaseio.com",
-                projectId: "gasosa-6a891",
-                storageBucket: "gasosa-6a891.appspot.com",
-                messagingSenderId: "706667096393"
-            });
-        }
-
-        firebase.auth().onAuthStateChanged((user) => {
-            if (user) {
-                this.setState({loggedIn: true});
-            }
-            else {
-                this.setState({loggedIn: false});
-            }
-        });
-    }
-
     render() {
+
+        const {navigate} = this.props.navigation;
+
         return (
-            <View style = {styles.container}>
-                <FirebaseLogin login={user => console.warn(user)}
-                />
-            </View>
-        )
-    }
-}
+            <Container style={styles.container}>
+                <Form>
+                    <Label style = {styles.labelProfile}>Perfil</Label>
+
+                    <Label style = {styles.label}>Nome</Label>
+                    <Text style={styles.text}>{firebase.auth().currentUser.displayName}</Text>
+
+                    <Label style = {styles.label}>Email</Label>
+                    <Text style={styles.text}>{firebase.auth().currentUser.email}</Text>
+
+                    <Button style={styles.button}
+                            full
+                            rounded
+                            primary
+                            onPress={() => firebase.auth().signOut().then(navigate('Login'))}
+                    >
+                        <Text style={styles.text}>Sair</Text>
+                    </Button>
+
+                </Form>
+            </Container>
+        );
+    };
+};
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        justifyContent: 'center',
+        backgroundColor: '#ff7f27',
+        padding: 10,
     },
+    button: {
+        marginTop: 10
+    },
+    text: {
+        color: 'white',
+    },
+    label: {
+        color: '#ffffffEE',
+        fontSize: totalSize(2),
+        fontWeight: '700',
+    },
+    labelProfile: {
+        marginTop: 10,
+        color: '#ffffffEE',
+        fontSize: totalSize(3),
+        fontWeight: '700',
+        flexDirection: 'row'
+    }
 });
+
+
+

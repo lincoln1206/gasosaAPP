@@ -1,12 +1,7 @@
-import { Dimensions } from 'react-native';
+import {Dimensions} from "react-native";
 
-const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
+const { height, width } = Dimensions.get('window');
 
-export default {
-  window: {
-    width,
-    height,
-  },
-  isSmallDevice: width < 375,
-};
+export const w = percent => (width * percent) / 100;
+export const h = percent => (height * percent) / 100;
+export const totalSize = num => (Math.sqrt((height * height) + (width * width)) * num) / 100;
