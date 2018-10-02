@@ -5,6 +5,8 @@
     "slug": "gasosa",
     "privacy": "public",
     "sdkVersion": "30.0.0",
+    "facebookScheme": "fb159163475019545",
+    "facebookDisplayName": "gasosa",
     "platforms": [
       "ios",
       "android"

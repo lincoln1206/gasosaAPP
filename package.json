@@ -27,6 +27,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
     "react-native-elements": "^0.19.1",
     "react-native-firebase": "^5.0.0",
+    "react-native-keyboard-aware-scroll-view": "^0.7.2",
     "react-native-keyboard-spacer": "^0.4.1",
     "react-native-linear-gradient": "^2.4.2",
     "react-native-loading-spinner-overlay": "^0.5.2",

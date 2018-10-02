@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {Dimensions, Platform, StyleSheet, Text, View} from 'react-native';
-import {Constants, Location, MapView, Permissions} from 'expo';
+import {Dimensions, Linking, Platform, StyleSheet, Text, View} from 'react-native';
+import {Constants, Icon, Location, MapView, Permissions} from 'expo';
 import gas_station from '../assets/images/gas_station.png'
+import * as constant from "../constants/Constants";
 
 const {height} = Dimensions.get('window');
 const GEOLOCATION_OPTIONS = {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000};
@@ -17,7 +18,8 @@ export default class MapScreen extends Component {
         errorMessage: null,
         hackHeight: height,
         isLoading: null,
-        markers: []
+        markers: [],
+        destination: null
     };
     locationChanged = (locations) => {
         const region = {
@@ -55,7 +57,7 @@ export default class MapScreen extends Component {
     }
 
     fetchMarkerData(latitude, longitude) {
-        const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=3000&type=gas_station&keyword="posto"or"gasolina"&key=AIzaSyAGxgKA5AO8z5JZXUMrhwDIDhPdYHoGZZg`;
+        const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=2500&type=gas_station&keyword="posto"or"gasolina"&key=${constant.GOOGLE_API_KEY}`;
         console.log(url);
         fetch(url)
             .then((response) => response.json())
@@ -70,8 +72,15 @@ export default class MapScreen extends Component {
             });
     }
 
-    componentDidMount() {
-        this.fetchMarkerData();
+    goToLocation(latitude, longitude) {
+        const url = `https://www.google.com/maps/dir/?api=1&travelmode=driving&dir_action=navigate&destination=${latitude},${longitude}`;
+        Linking.canOpenURL(url).then(supported => {
+            if (!supported) {
+                console.log('Can\'t handle url: ' + url);
+            } else {
+                return Linking.openURL(url);
+            }
+        }).catch(err => console.error('An error occurred', err));
     }
 
     render() {
@@ -115,7 +124,7 @@ export default class MapScreen extends Component {
                         followsUserLocation={true}
                         onPress={e => console.log(e.nativeEvent)}
                     >
-                        {this.state.isLoading ? null : this.state.markers.map((marker, index) => {
+                        {this.state.markers.map((marker, index) => {
                             const coords = {
                                 latitude: marker.geometry.location.lat,
                                 longitude: marker.geometry.location.lng,
@@ -127,7 +136,19 @@ export default class MapScreen extends Component {
                                     coordinate={coords}
                                     title={marker.name}
                                     image={gas_station}
-                                />
+                                    pinColor={'blue'}
+                                    onCalloutPress={() => this.goToLocation(marker.geometry.location.lat, marker.geometry.location.lng)}>
+                                    <MapView.Callout>
+                                        <View style={styles.marker}>
+                                            <Text>{marker.name}</Text>
+                                            <Icon.Ionicons
+                                                name={Platform.OS === "ios" ? "ios-send" : "md-arrow-dropup-circle"}
+                                                color="#ff7f27"
+                                                size={25}
+                                            />
+                                        </View>
+                                    </MapView.Callout>
+                                </MapView.Marker>
                             );
                         })}
                     </MapView>
@@ -151,6 +172,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingTop: Constants.statusBarHeight,
         backgroundColor: '#ecf0f1',
+    },
+    marker: {
+        flex: 1,
+        alignItems: 'center',
     },
     paragraph: {
         margin: 24,

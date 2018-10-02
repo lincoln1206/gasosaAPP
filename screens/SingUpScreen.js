@@ -1,8 +1,9 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native'
+import {Platform, StyleSheet, Text, TouchableOpacity} from 'react-native'
 import {Button, Container, Form, Input, Item, Label} from 'native-base'
 import fb from "../firebase/Firebase";
 import {h, totalSize, w} from "../constants/Layout";
+import {Constants, Icon} from 'expo';
 
 export default class SingUpScreen extends React.Component {
 
@@ -41,6 +42,14 @@ export default class SingUpScreen extends React.Component {
             <Container style={styles.container}>
                 <Form>
 
+                    <TouchableOpacity onPress={() => navigate('Login')} style={styles.touchable}>
+                        <Icon.Ionicons
+                            name={Platform.OS === "ios" ? "ios-arrow-back" : "md-arrow-back"}
+                            color="white"
+                            size={25}
+                        />
+                    </TouchableOpacity>
+
                     <Item floatingLabel>
                         <Label>Nome</Label>
                         <Input
@@ -78,10 +87,6 @@ export default class SingUpScreen extends React.Component {
                         <Text style={styles.text}>Inscrever-se</Text>
                     </Button>
 
-                    <TouchableOpacity onPress={() => navigate('Login')} style={styles.touchable}>
-                        <Text style={styles.signIn}>{'<'} Login</Text>
-                    </TouchableOpacity>
-
                 </Form>
             </Container>
         );
@@ -94,6 +99,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-start',
         backgroundColor: '#ff7f27',
         padding: 10,
+        paddingTop: Constants.statusBarHeight,
     },
     button: {
         marginTop: 10
@@ -105,8 +111,8 @@ const styles = StyleSheet.create({
     },
     signIn: {
         color: '#ffffffEE',
-        fontSize: totalSize(3),
-        fontWeight: '700',
+        fontSize: totalSize(2),
+        fontWeight: '700'
     },
     text: {
         color: 'white'
