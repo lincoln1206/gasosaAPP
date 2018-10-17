@@ -1242,7 +1242,7 @@ babel-messages@^6.23.0:
 
 babel-plugin-check-es2015-constants@^6.5.0, babel-plugin-check-es2015-constants@^6.8.0:
   version "6.22.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-check-es2015-constants/-/babel-plugin-check-es2015-constants-6.22.0.tgz#35157b101426fd2ffd3da3f75c7d1e91835bbf8a"
+  resolved "https://registry.yarnpkg.com/babel-plugin-check-es2015-config/-/babel-plugin-check-es2015-config-6.22.0.tgz#35157b101426fd2ffd3da3f75c7d1e91835bbf8a"
   dependencies:
     babel-runtime "^6.22.0"
 
@@ -1606,7 +1606,7 @@ babel-preset-fbjs@^2.1.2, babel-preset-fbjs@^2.1.4:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/babel-preset-fbjs/-/babel-preset-fbjs-2.3.0.tgz#92ff81307c18b926895114f9828ae1674c097f80"
   dependencies:
-    babel-plugin-check-es2015-constants "^6.8.0"
+    babel-plugin-check-es2015-config "^6.8.0"
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-plugin-syntax-flow "^6.8.0"
     babel-plugin-syntax-jsx "^6.8.0"
@@ -1652,7 +1652,7 @@ babel-preset-react-native@1.9.0:
   version "1.9.0"
   resolved "http://registry.npmjs.org/babel-preset-react-native/-/babel-preset-react-native-1.9.0.tgz#035fc06c65f4f2a02d0336a100b2da142f36dab1"
   dependencies:
-    babel-plugin-check-es2015-constants "^6.5.0"
+    babel-plugin-check-es2015-config "^6.5.0"
     babel-plugin-react-transform "2.0.2"
     babel-plugin-syntax-async-functions "^6.5.0"
     babel-plugin-syntax-class-properties "^6.5.0"
@@ -1686,7 +1686,7 @@ babel-preset-react-native@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-4.0.1.tgz#14ff07bdb6c8df9408082c0c18b2ce8e3392e76a"
   dependencies:
-    babel-plugin-check-es2015-constants "^6.5.0"
+    babel-plugin-check-es2015-config "^6.5.0"
     babel-plugin-react-transform "^3.0.0"
     babel-plugin-syntax-async-functions "^6.5.0"
     babel-plugin-syntax-class-properties "^6.5.0"
@@ -2904,15 +2904,15 @@ expo-cli@^2.2.0:
 
 expo-constants-interface@~1.0.2:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/expo-constants-interface/-/expo-constants-interface-1.0.2.tgz#94970e15ec0a41df4750c6e2c2af416cb8a6471c"
+  resolved "https://registry.yarnpkg.com/expo-config-interface/-/expo-config-interface-1.0.2.tgz#94970e15ec0a41df4750c6e2c2af416cb8a6471c"
   dependencies:
     expo-core "~1.1.0"
 
 expo-constants@~1.0.2:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-1.0.2.tgz#2b9f96bb26d5d20df60368a66c5a5f237c9659f3"
+  resolved "https://registry.yarnpkg.com/expo-config/-/expo-config-1.0.2.tgz#2b9f96bb26d5d20df60368a66c5a5f237c9659f3"
   dependencies:
-    expo-constants-interface "~1.0.2"
+    expo-config-interface "~1.0.2"
     expo-core "~1.1.0"
 
 expo-contacts@~1.0.0:
@@ -3079,7 +3079,7 @@ expo@^30.0.1:
     expo-asset "~1.1.0"
     expo-barcode-scanner "~1.0.0"
     expo-camera "~1.1.0"
-    expo-constants "~1.0.2"
+    expo-config "~1.0.2"
     expo-contacts "~1.0.0"
     expo-core "~1.1.0"
     expo-face-detector "~1.0.2"
@@ -3437,7 +3437,7 @@ fresh@0.5.2:
 
 fs-constants@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/fs-constants/-/fs-constants-1.0.0.tgz#6be0de9be998ce16af8afc24497b9ee9b7ccd9ad"
+  resolved "https://registry.yarnpkg.com/fs-config/-/fs-config-1.0.0.tgz#6be0de9be998ce16af8afc24497b9ee9b7ccd9ad"
 
 fs-extra@^1.0.0:
   version "1.0.0"
@@ -7229,7 +7229,7 @@ tar-stream@^1.1.2:
     bl "^1.0.0"
     buffer-alloc "^1.2.0"
     end-of-stream "^1.0.0"
-    fs-constants "^1.0.0"
+    fs-config "^1.0.0"
     readable-stream "^2.3.0"
     to-buffer "^1.1.1"
     xtend "^4.0.0"
