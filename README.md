@@ -2,9 +2,9 @@
 ## O aplicativo feito para o seu bolso! 
 ## Aplicativo totalmente feito com React Native que gera código nativo android e ios.
 ## Grupo :
-> Lincoln Max
-> Vinicius Ricardo
-> Marcos Paulo
+> + Lincoln Max
+> + Vinicius Ricardo
+> + Marcos Paulo
  
 # Update - 17/10/2018
 ## Novidades:
