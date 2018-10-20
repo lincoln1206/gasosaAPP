@@ -1,54 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b9f56b9-32be-4e68-827e-c1603307bae4" name="Default" comment="*Update 17/10/2018*&#10;++MaterialDesign &#10;++Organização de projeto&#10;++Seleção de Cidades">
-      <change afterPath="$APPLICATION_CONFIG_DIR$/options/window.state.xml" afterDir="false" />
+    <list default="true" id="7b9f56b9-32be-4e68-827e-c1603307bae4" name="Default" comment="">
       <change afterPath="$USER_HOME$/Documents/Gasosa/gasosa/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Documents/Projetos/registro-boleto/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Documents/Projetos/registro-boleto/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Documents/Projetos/registro-boleto/src/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/Cities.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/navigation/FuelNavigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/TestScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/fuel/index_fuel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/fuel/screens/SelectCityScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/screens/profile/index_profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/SpaceMono-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/fonts/SpaceMono-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/gas_station.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/gas_station_default.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/robot-dev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/robot-prod.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/StyledText.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/StyledText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TabBarIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TabBarIcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/__tests__/StyledText-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/__tests__/StyledText-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/Colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/Colors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/Constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase/Firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/Firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AppNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/MainTabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/MainTabNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/ProfileNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/ProfileNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/AboutScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/AboutScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/ForgotPasswordScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/profile/screens/ForgotPasswordScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/FuelScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/profile/screens/LoginScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/MapScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/map/screens/MapScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/ProfileScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/profile/screens/ProfileScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/SingUpScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/screens/profile/screens/SingUpScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/UserScreens.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage.rules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LoginScreen.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/LoginScreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Colors.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/Colors.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -75,10 +44,7 @@
         <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -87,15 +53,12 @@
         <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/SelectCityScreen.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -119,9 +82,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -131,9 +91,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="117">
               <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -152,18 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="134">
               <caret line="133" column="97" lean-forward="true" selection-start-line="133" selection-start-column="97" selection-end-line="133" selection-end-column="97" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/Constants.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -192,6 +137,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="lincoln1206 &lt;lincoln_1206@outlook.com&gt;" />
         <option value="lincoln1206" />
       </list>
     </option>
@@ -455,25 +401,34 @@
       <workItem from="1538377907309" duration="325000" />
       <workItem from="1538440254408" duration="14748000" />
       <workItem from="1539546898457" duration="16811000" />
-      <workItem from="1539737356912" duration="15435000" />
+      <workItem from="1539737356912" duration="16389000" />
     </task>
+    <task id="LOCAL-00001" summary="# Update - 17/10/2018&#10;## Novidades:&#10;&#10;&gt; + MaterialDesign no app,&#10;&gt; + Escolha de cidades&#10;&gt; + Organização de código">
+      <created>1539753172447</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539753172448</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131403000" />
+    <option name="totallyTimeSpent" value="132357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17755532" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3292683" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3248337" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33481154" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33481154" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -510,13 +465,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="*Update 26/09/2018*&#10;-Mapa de postos próximos com geolocalização do usuário" />
-    <option name="LAST_COMMIT_MESSAGE" value="*Update 26/09/2018*&#10;-Mapa de postos próximos com geolocalização do usuário" />
+    <MESSAGE value="# Update - 17/10/2018&#10;## Novidades:&#10;&#10;&gt; + MaterialDesign no app,&#10;&gt; + Escolha de cidades&#10;&gt; + Organização de código" />
+    <option name="LAST_COMMIT_MESSAGE" value="# Update - 17/10/2018&#10;## Novidades:&#10;&#10;&gt; + MaterialDesign no app,&#10;&gt; + Escolha de cidades&#10;&gt; + Organização de código" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -526,9 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,16 +629,6 @@
     <entry file="file://$PROJECT_DIR$/app/screens/profile/index_profile.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/LoginScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/SingUpScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -710,7 +656,7 @@
     <entry file="file://$PROJECT_DIR$/app/config/Colors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -718,9 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -735,9 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,10 +691,7 @@
     <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -762,19 +699,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="133" column="97" lean-forward="true" selection-start-line="133" selection-start-column="97" selection-end-line="133" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/SelectCityScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -783,6 +714,16 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/LoginScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
