@@ -5,6 +5,7 @@
 > + Lincoln Max
 > + Vinicius Ricardo
 > + Marcos Paulo
+> + Felipe Medeiros
  
 # Update - 17/10/2018
 ## Novidades:
