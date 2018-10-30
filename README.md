@@ -6,11 +6,11 @@
 > + Vinicius Ricardo
 > + Marcos Paulo
 > + Felipe Medeiros
-##Como instalar :
+## Como instalar :
 > 1. Instalar Node.js na sua máquina
 > 2. npm install https://github.com/lincoln1206/gasosaAPP.git
 
-##Como rodar:
+## Como rodar:
 > Com um celular android no modo debug ou emulador de android no pc , 
 dê o comando 'npm run android' na pasta raiz do aplicativo.
 
