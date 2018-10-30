@@ -10,9 +10,7 @@ export default class SelectCityScreen extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            idCity: '0'
-        };
+        this.state = {idCity: '0'};
     }
 
     render() {
@@ -25,9 +23,12 @@ export default class SelectCityScreen extends Component {
                     iosHeader="Cidade"
                     selectedValue={this.state.idCity}
                     onValueChange={(idCity) => this.setState({idCity}, () => {
-                        if (this.state.idCity ? '0' : navigate('Prices', {value: this.state.idCity})) {
+                        const id = this.state.idCity;
+
+                        if (id !== "0") {
                             navigate('Prices', {idCity: this.state.idCity});
                         }
+
                     })}
                     style={{flex: 1, color: 'white'}}
                     itemStyle={{backgroundColor: 'white', marginLeft: 0, paddingLeft: 15}}

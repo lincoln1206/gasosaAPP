@@ -131,7 +131,7 @@ export default class MapScreen extends Component {
                         followsUserLocation={true}
                         onPress={e => console.log(e.nativeEvent)}
                     >
-                        {this.state.isLoading ? true : this.state.markers.map((marker, index) => {
+                        {this.state.markers.map((marker, index) => {
                             const coords = {
                                 latitude: marker.geometry.location.lat,
                                 longitude: marker.geometry.location.lng,

@@ -17,7 +17,7 @@
     "axios": "^0.18.0",
     "cheerio-without-node-native": "^0.20.2",
     "expo": "^30.0.1",
-    "expo-cli": "^2.2.0",
+    "expo-cli": "^2.2.4",
     "firebase": "^5.5.2",
     "htmlparser2-without-node-native": "^3.9.2",
     "lodash": "^4.17.11",
