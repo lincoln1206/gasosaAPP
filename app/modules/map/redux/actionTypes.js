@@ -1,0 +1,2 @@
+export const ADD_GAS_STATION = 'ADD_GAS_STATION';
+export const DEFAULT_CITY = 'DEFAULT_CITY';

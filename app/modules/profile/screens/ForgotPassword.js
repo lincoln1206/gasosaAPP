@@ -1,13 +1,12 @@
 import React from 'react';
 import {StyleSheet, Text} from 'react-native'
 import {Button, Container, Form, Input, Item, Label} from 'native-base'
-import fb from "../../../config/Firebase";
-//import styles from '../styles/styles'
+import * as fb from "../api";
 import {h, totalSize, w} from "../../../config/Layout";
 import {Constants} from "expo";
+import {connect} from 'react-redux';
 
-export default class SingUpScreen extends React.Component {
-
+class ForgotPassword extends React.Component {
 
     static navigationOptions = () => ({
         title: null,
@@ -22,38 +21,27 @@ export default class SingUpScreen extends React.Component {
 
         this.state = (
             {
-                name: '',
-                email: '',
-                password: ''
+                email: ''
             }
         )
     }
 
-    createFireBaseAccount = (name, email, password) => {
+    sendEmailWithPassword = (email) => {
         const {navigate} = this.props.navigation;
 
-        this.setState({isCreatingAccount: true});
-        fb.createFirebaseAccount(name, email, password)
+        fb.sendEmailWithPassword(email)
             .then(result => {
-                if (result) navigate('Profile');
-                this.setState({isCreatingAccount: false});
+                if (result) navigate('Login');
             });
     };
 
     render() {
 
+        console.log(this.props.navigation);
+
         return (
             <Container style={styles.container}>
                 <Form>
-
-                    <Item floatingLabel>
-                        <Label>Nome</Label>
-                        <Input
-                            autocorrect={false}
-                            autoCapitalize='none'
-                            onChangeText={(name) => this.setState({name})}
-                        />
-                    </Item>
 
                     <Item floatingLabel>
                         <Label>Email</Label>
@@ -64,29 +52,21 @@ export default class SingUpScreen extends React.Component {
                         />
                     </Item>
 
-                    <Item floatingLabel>
-                        <Label>Senha</Label>
-                        <Input
-                            secureTextEntry={true}
-                            autocorrect={false}
-                            autoCapitalize='none'
-                            onChangeText={(password) => this.setState({password})}
-                        />
-                    </Item>
-
                     <Button style={styles.button}
                             full
                             rounded
-                            title={"Inscrever-se"}
-                            onPress={() => this.createFireBaseAccount(this.state.name, this.state.email, this.state.password)}
+                            title={"Enviar email de recuperação de senha"}
+                            onPress={() => this.sendEmailWithPassword(this.state.email)}
                     >
-                        <Text style={styles.text}>Inscrever-se</Text>
+                        <Text style={styles.text}>Enviar email de recuperação de senha</Text>
                     </Button>
+
                 </Form>
             </Container>
+
         );
     };
-};
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -99,7 +79,6 @@ const styles = StyleSheet.create({
     button: {
         marginTop: 10,
         backgroundColor: '#FD0900',
-
     },
     touchable: {
         alignSelf: 'flex-start',
@@ -116,6 +95,12 @@ const styles = StyleSheet.create({
     },
 });
 
+const mapStateToProps = (state) => {
+    const {forgot} = state;
+    return {forgot}
+};
+
+export default connect(mapStateToProps)(ForgotPassword);
 
 
 

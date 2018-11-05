@@ -1,12 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b9f56b9-32be-4e68-827e-c1603307bae4" name="Default" comment="">
+    <list default="true" id="7b9f56b9-32be-4e68-827e-c1603307bae4" name="Default" comment="# Update - 05/11/2018&#10;## Novidades:&#10;&gt; + Implantação de Redux Store&#10;&gt; + Telas de preços de postos agora tem código nativo&#10;&gt; + Informações de postos agora são mostradas no mapa&#10;&gt; + Request POST para o link para obtenção de dados http://portaldacidadania.pb.gov.br/UtilidadePublica/Procon/Posto/ListarJson">
       <change afterPath="$USER_HOME$/Documents/Gasosa/gasosa/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Documents/Projetos/registro-boleto/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Documents/Projetos/registro-boleto/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$USER_HOME$/Documents/Projetos/registro-boleto/src/Api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/markerPostoAmarelo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/markerPostoVerde.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/markerPostoVermelho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Cities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Images.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/config/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/fuel/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/fuel/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/fuel/redux/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/fuel/redux/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/map/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/map/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/map/redux/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/map/redux/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/map/screens/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/profile/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/profile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/profile/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/profile/redux/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/profile/redux/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/test/screens/TestScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/redux/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/redux/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/gas_station_default.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/markerPostoDefault.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/Cities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/Colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/Colors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/Constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/Firebase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/AppNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/AppNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/FuelNavigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/MainTabNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/navigation/MainTabNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/navigation/ProfileNavigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/AboutScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/TestScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/fuel/screens/Prices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/fuel/index_fuel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/fuel/screens/SelectCityScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/fuel/screens/SelectCity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/map/screens/MapScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/profile/index_profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/profile/screens/ForgotPasswordScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/profile/screens/ForgotPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/profile/screens/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/profile/screens/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/profile/screens/ProfileScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/profile/screens/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/screens/profile/screens/SingUpScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/profile/screens/SingUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,96 +69,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/LoginScreen.js">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/profile/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+            <state relative-caret-position="1972">
+              <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectCityScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/SelectCityScreen.js">
+      <file leaf-file-name="SelectCity.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/fuel/screens/SelectCity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            <state relative-caret-position="-1682">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="MainTabNavigator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/navigation/MainTabNavigator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="170">
-                <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+              <first_editor relative-caret-position="374">
+                <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileScreen.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/ProfileScreen.js">
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/profile/redux/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/screens/TestScreen.js">
+      <file leaf-file-name="Prices.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/fuel/screens/Prices.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state relative-caret-position="273">
+              <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_profile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/screens/profile/index_profile.js">
+      <file leaf-file-name="actionTypes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/fuel/redux/actionTypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state>
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SingUpScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/SingUpScreen.js">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/map/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="98" column="3" selection-start-line="98" selection-start-column="3" selection-end-line="98" selection-end-column="3" />
+            <state relative-caret-position="1139">
+              <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/screens/map/screens/MapScreen.js">
+      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/profile/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="143" column="54" selection-start-line="143" selection-start-column="54" selection-end-line="143" selection-end-column="54" />
+            <state relative-caret-position="34">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PriceScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="Map.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/map/screens/Map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -131,7 +181,28 @@
       <find>featureCollection</find>
       <find>geoloc</find>
       <find>console.warn</find>
+      <find>folly::toJson</find>
+      <find>markers</find>
+      <find>styles.map</find>
+      <find>fetchMarkerData</find>
+      <find>_getLocationAsync</find>
+      <find>hackHeight</find>
+      <find>region</find>
+      <find>marker</find>
+      <find>locationChanged</find>
+      <find>locations</find>
+      <find>destination</find>
+      <find>height</find>
+      <find>GEOLOCATION_OPTIONS</find>
+      <find>location</find>
+      <find>text</find>
+      <find>_auth</find>
+      <find>combineReducers</find>
+      <find>console.log</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -145,56 +216,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FirebaseApp/modules/auth/components/AuthTextInput/AuthTextInput.js" />
-        <option value="$PROJECT_DIR$/FirebaseApp/modules/auth/constants.js" />
-        <option value="$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/Register/Register.js" />
-        <option value="$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/Welcome/Welcome.js" />
-        <option value="$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/Login/Login.js" />
-        <option value="$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/ForgotPassword/ForgotPassword.js" />
-        <option value="$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/CompleteProfile/CompleteProfile.js" />
-        <option value="$PROJECT_DIR$/screens/Home.js" />
-        <option value="$PROJECT_DIR$/FirebaseApp/App/config/constants.js" />
-        <option value="$PROJECT_DIR$/screens/UserScreen.js" />
-        <option value="$PROJECT_DIR$/navigation/MainTabNavigator.js" />
-        <option value="$PROJECT_DIR$/constants/Layout.js" />
-        <option value="$PROJECT_DIR$/FirebaseLogin/api/Firebase.js" />
-        <option value="$PROJECT_DIR$/FirebaseLogin/screens/Login/index.js" />
-        <option value="$PROJECT_DIR$/navigation/ProfileNavigation.js" />
-        <option value="$PROJECT_DIR$/screens/ProfileScreen.js" />
-        <option value="$PROJECT_DIR$/screens/UserScreens.js" />
-        <option value="$PROJECT_DIR$/firebase/Firebase.js" />
-        <option value="$PROJECT_DIR$/constants/Constants.js" />
-        <option value="$PROJECT_DIR$/screens/SingUpScreen.js" />
-        <option value="$PROJECT_DIR$/screens/ForgotPasswordScreen.js" />
-        <option value="$PROJECT_DIR$/screens/LoginScreen.js" />
-        <option value="$PROJECT_DIR$/screens/MapScreen.js" />
-        <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/constants/Colors.js" />
-        <option value="$PROJECT_DIR$/app/screens/UserScreens.js" />
-        <option value="$PROJECT_DIR$/App.js" />
-        <option value="$PROJECT_DIR$/app/screens/TesteScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/SingUpScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/ForgotPasswordScreen.js" />
-        <option value="$PROJECT_DIR$/app/config/Colors.js" />
-        <option value="$PROJECT_DIR$/app/components/TabBarIcon.js" />
-        <option value="$PROJECT_DIR$/app/screens/FuelScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/SelectCityScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/PriceScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/profile/index_profile.js" />
-        <option value="$PROJECT_DIR$/app/screens/fuel/index_fuel.js" />
-        <option value="$PROJECT_DIR$/app/config/Firebase.js" />
-        <option value="$PROJECT_DIR$/app/screens/profile/screens/SingUpScreen.js" />
+        <option value="$PROJECT_DIR$/app/modules/test/screens/TestScreen.js" />
+        <option value="$PROJECT_DIR$/app/components/Images.js" />
+        <option value="$PROJECT_DIR$/app/config/Constants.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/screens/MapScreen.js" />
+        <option value="$PROJECT_DIR$/app/components/ProfileIcons.js" />
+        <option value="$PROJECT_DIR$/app/redux/store.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/actions.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/actions.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/actionTypes.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/actionTypes.js" />
         <option value="$PROJECT_DIR$/app/navigation/FuelNavigation.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/SingUpScreen.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/fuelRoot.js" />
+        <option value="$PROJECT_DIR$/app/navigation/AppNavigator.js" />
+        <option value="$PROJECT_DIR$/app/config/firebase.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/actionTypes.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/actions.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/profileRoot.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/ProfileScreen.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/LoginScreen.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/ForgotPasswordScreen.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/index.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/index.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/singUp.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/redux/reducer.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/forgotPassword.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/screens/map.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/redux/reducer.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/redux/reducer.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/SingUp.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/ForgotPassword.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/redux/actionTypes.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/redux/actions.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/reducer.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/redux/actions.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/Profile.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/reducer.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/index.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/screens/Login.js" />
+        <option value="$PROJECT_DIR$/app/redux/rootReducer.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/api.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/redux/actionTypes.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/redux/actions.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/reducer.js" />
+        <option value="$PROJECT_DIR$/App.js" />
+        <option value="$PROJECT_DIR$/app/modules/map/screens/Map.js" />
+        <option value="$PROJECT_DIR$/app/modules/profile/api.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/screens/Prices.js" />
+        <option value="$PROJECT_DIR$/app/modules/fuel/screens/SelectCity.js" />
         <option value="$PROJECT_DIR$/app/navigation/MainTabNavigator.js" />
-        <option value="$PROJECT_DIR$/app/screens/MapScreen.js" />
-        <option value="$PROJECT_DIR$/app/config/Cities.js" />
-        <option value="$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js" />
-        <option value="$PROJECT_DIR$/node_modules/react-native/Libraries/Animated/src/__tests__/AnimatedNative-test.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/screens/fuel/screens/SelectCityScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/profile/screens/ProfileScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/TestScreen.js" />
-        <option value="$PROJECT_DIR$/app/screens/map/screens/MapScreen.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -228,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,19 +310,6 @@
               <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
@@ -270,63 +327,94 @@
               <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="screens" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="navigation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="fuel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="fuel" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gasosaAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gasosaAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,21 +426,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/functions/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\assets\images" />
-      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\screens\map\screens" />
-      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\screens\fuel\screens" />
-      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\screens\profile" />
-      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\screens\profile\screens" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP" />
       <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\assets\images" />
+      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP" />
       <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\screens" />
       <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\assets\images" />
       <recent name="C:\Users\linco\Documents\Gasosa\gasosa\FirebaseLogin\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\modules\profile" />
+      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\modules\map" />
+      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\modules\fuel" />
+      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\modules\map\redux" />
+      <recent name="C:\Users\linco\WebstormProjects\gasosaAPP\app\modules\fuel\redux" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,7 +492,14 @@
       <workItem from="1539737356912" duration="16389000" />
       <workItem from="1540001321601" duration="1127000" />
       <workItem from="1540172869718" duration="839000" />
-      <workItem from="1540929872642" duration="8937000" />
+      <workItem from="1540929872642" duration="9507000" />
+      <workItem from="1540998576080" duration="32239000" />
+      <workItem from="1541092250623" duration="13351000" />
+      <workItem from="1541198317062" duration="22185000" />
+      <workItem from="1541254633005" duration="9501000" />
+      <workItem from="1541266234039" duration="12804000" />
+      <workItem from="1541344863843" duration="46881000" />
+      <workItem from="1541394277486" duration="2476000" />
     </task>
     <task id="LOCAL-00001" summary="# Update - 17/10/2018&#10;## Novidades:&#10;&#10;&gt; + MaterialDesign no app,&#10;&gt; + Escolha de cidades&#10;&gt; + Organização de código">
       <created>1539753172447</created>
@@ -458,7 +554,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143260000" />
+    <option name="totallyTimeSpent" value="283267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -467,14 +563,15 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17755532" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49947312" visible="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.3248337" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50105375" side_tool="true" weight="0.3248337" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49947312" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" visible="true" weight="0.32150775" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3337029" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -482,13 +579,13 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3292683" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32594234" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3248337" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894625" weight="0.3248337" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17755532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -497,10 +594,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33481154" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3337029" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50105375" side_tool="true" weight="0.3248337" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3292683" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49947312" weight="0.3292683" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3292683" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -549,7 +646,8 @@
     <MESSAGE value="# Update - 19/10/2018 - 3&#10;&#10;- Update README.md" />
     <MESSAGE value="# Adicionando membro do grupo no READEME.md" />
     <MESSAGE value="# Update - 30/10/2018&#10;## Novidades:&#10;&gt; + Layout de tela de perfil reformulado" />
-    <option name="LAST_COMMIT_MESSAGE" value="# Update - 30/10/2018&#10;## Novidades:&#10;&gt; + Layout de tela de perfil reformulado" />
+    <MESSAGE value="# Update - 05/11/2018&#10;## Novidades:&#10;&gt; + Implantação de Redux Store&#10;&gt; + Telas de preços de postos agora tem código nativo&#10;&gt; + Informações de postos agora são mostradas no mapa&#10;&gt; + Request POST para o link para obtenção de dados http://portaldacidadania.pb.gov.br/UtilidadePublica/Procon/Posto/ListarJson" />
+    <option name="LAST_COMMIT_MESSAGE" value="# Update - 05/11/2018&#10;## Novidades:&#10;&gt; + Implantação de Redux Store&#10;&gt; + Telas de preços de postos agora tem código nativo&#10;&gt; + Informações de postos agora são mostradas no mapa&#10;&gt; + Request POST para o link para obtenção de dados http://portaldacidadania.pb.gov.br/UtilidadePublica/Procon/Posto/ListarJson" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -560,62 +658,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/Cities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/reducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/map/screens/MapScreen.js">
+    <entry file="file://$PROJECT_DIR$/app/modules/map/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="133" column="97" lean-forward="true" selection-start-line="133" selection-start-column="97" selection-end-line="133" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/components/AuthTextInput/AuthTextInput.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/api.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/constants.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/reducer.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/Register/Register.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/Login/Login.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/ForgotPassword/ForgotPassword.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/CompleteProfile/CompleteProfile.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/home/scenes/Home/Home.js" />
-    <entry file="file://$PROJECT_DIR$/screens/Home.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/Welcome/Welcome.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/modules/auth/scenes/Welcome/index.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseApp/App/config/firebase.js" />
-    <entry file="file://$PROJECT_DIR$/screens/TesteScreen.js" />
-    <entry file="file://$PROJECT_DIR$/screens/UserScreen.js" />
-    <entry file="file://$PROJECT_DIR$/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/FirebaseLogin/index.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseLogin/api/Firebase.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseLogin/screens/ForgotPassword/index.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseLogin/screens/Register/index.js" />
-    <entry file="file://$PROJECT_DIR$/FirebaseLogin/screens/Login/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/metro/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2348" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/metro/src/Assets/index.js.flow">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-580">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="289">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -626,60 +678,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/ForgotPasswordScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/screens/TestScreen1.js" />
-    <entry file="file://$PROJECT_DIR$/app/components/TabBarIcon.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/ReactCommon/jschelpers/Value.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="409">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/navigation/MainTabNavigator.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Animated/src/__tests__/AnimatedNative-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        <state relative-caret-position="323">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/fuel/index_fuel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/navigation/FuelNavigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/Cities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/Constants.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/images/Images.js" />
+    <entry file="file://$PROJECT_DIR$/app/config/Colors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/Firebase.js">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/test/screens/TestScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/Constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/ProfileIcon.js" />
+    <entry file="file://$PROJECT_DIR$/app/components/TabBarIcon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/fuel/fuelRoot.js" />
+    <entry file="file://$PROJECT_DIR$/app/navigation/AppNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/profileRoot.js" />
+    <entry file="file://$PROJECT_DIR$/app/navigation/ProfileNavigation.js" />
+    <entry file="file://$PROJECT_DIR$/app/navigation/FuelNavigation.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/react-native-router-flux/docs/v3/REDUX_FLUX.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Cities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -690,94 +793,228 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/Colors.js">
+    <entry file="file://$PROJECT_DIR$/app/config/firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/screens/ForgotPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/redux/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/redux/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#43#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/screens/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/redux/rootReducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#1#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-native/Libraries/Animated/src/__tests__/AnimatedNative-test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/LoginScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/SelectCityScreen.js">
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/screens/SingUp.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/SingUpScreen.js">
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/screens/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="98" column="3" selection-start-line="98" selection-start-column="3" selection-end-line="98" selection-end-column="3" />
+        <state relative-caret-position="357">
+          <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/profile/index_profile.js">
+    <entry file="file://$PROJECT_DIR$/app/modules/fuel/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/fuel/screens/PriceScreen.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/TestScreen.js">
+    <entry file="file://$PROJECT_DIR$/app/modules/map/redux/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/map/screens/MapScreen.js">
+    <entry file="file://$PROJECT_DIR$/app/modules/map/redux/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="143" column="54" selection-start-line="143" selection-start-column="54" selection-end-line="143" selection-end-column="54" />
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/map/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/fuel/redux/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/fuel/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/map/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/fuel/redux/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/redux/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/map/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/profile/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/map/screens/Map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/fuel/screens/Prices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/fuel/screens/SelectCity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1682">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/navigation/MainTabNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <first_editor relative-caret-position="374">
+            <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/screens/profile/screens/ProfileScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="71" column="13" lean-forward="true" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

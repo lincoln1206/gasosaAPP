@@ -11,4 +11,5 @@ export const FACEBOOK_APP_ID = "159163475019545";
 
 //Google
 export const GOOGLE_API_KEY = "AIzaSyAGxgKA5AO8z5JZXUMrhwDIDhPdYHoGZZg";
+export const GEOLOCATION_OPTIONS = {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000};
 

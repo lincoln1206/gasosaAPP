@@ -1,40 +1,66 @@
 import React from 'react';
 import {Image, StyleSheet, Text} from 'react-native'
 import {Button, Container, Form, Label} from 'native-base'
-import firebase from 'firebase';
 import {totalSize} from '../../../config/Layout';
+import {auth} from "../../../config/firebase";
+import * as fb from "../api";
+import {connect} from 'react-redux';
+import {bindActionCreators} from "redux";
+import {loggedOut} from "../redux/actions";
 
-export default class ProfileScreen extends React.Component {
+class Profile extends React.Component {
 
     static navigationOptions = {
         title: null, header: null,
     };
 
-    obtainPhotoUrl = () => {
-        const image = firebase.auth().currentUser.photoURL;
-        const profile = require('../../../assets/images/profile-default.png');
-
-        if (image !== null)
-            this.setState({image: image});
-        else
-            this.setState({image: profile});
-
-        console.log(profile);
-        console.log(this.state.image);
-    };
-
     constructor(props) {
         super(props);
-        this.state = {image: null}
+        this.state = {
+            image: null,
+            user: null
+        }
     }
 
-    componentDidMount() {
+    componentWillMount() {
+        this.obtainUser();
         this.obtainPhotoUrl();
     }
 
-    render() {
+    obtainPhotoUrl() {
+        const image = auth.currentUser.photoURL;
+        const profile = require('../../../assets/images/profile-default.png');
+
+        (image !== null) ? this.setState({image: image}) : this.setState({image: profile})
+
+    };
+
+    obtainUser() {
+        const user = auth.currentUser;
+        this.setState({user});
+    }
+
+    signOut(user) {
 
         const {navigate} = this.props.navigation;
+
+        this.props.loggedOut(user);
+
+        (fb.signOut())
+            .then(result => {
+                if (result) {
+                    navigate('Login')
+                }
+                else {
+                    alert('Ocorreu um erro ao sair!');
+                }
+            })
+            .catch((error) => {
+                alert(error);
+            });
+    }
+
+    render() {
 
         return (
             <Container style={styles.container}>
@@ -44,14 +70,14 @@ export default class ProfileScreen extends React.Component {
                            style={styles.photo}/>
                     <Label style={styles.labelProfile}>Perfil</Label>
                     <Label style={styles.label}>Nome</Label>
-                    <Text style={styles.text}>{firebase.auth().currentUser.displayName}</Text>
+                    <Text style={styles.text}>{auth.currentUser.displayName}</Text>
                     <Label style={styles.label}>Email</Label>
-                    <Text style={styles.text}>{firebase.auth().currentUser.email}</Text>
+                    <Text style={styles.text}>{auth.currentUser.email}</Text>
                     <Button style={styles.button}
                             full
                             rounded
                             primary
-                            onPress={() => firebase.auth().signOut().then(navigate('Login'))}
+                            onPress={() => this.signOut(this.state.user)}
                     >
                         <Text style={styles.text}>Sair</Text>
                     </Button>
@@ -59,7 +85,7 @@ export default class ProfileScreen extends React.Component {
             </Container>
         );
     };
-};
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -95,6 +121,19 @@ const styles = StyleSheet.create({
         borderRadius: 150 / 2
     }
 });
+
+const mapStateToProps = (state) => {
+    const {profile} = state;
+    return {profile}
+};
+
+const mapDispatchToProps = dispatch => (
+    bindActionCreators({
+        loggedOut
+    }, dispatch)
+);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);
 
 
 

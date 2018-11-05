@@ -3,15 +3,14 @@ import {Platform} from 'react-native';
 import {createStackNavigator} from 'react-navigation';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs'
 import TabBarIcon from '../components/TabBarIcon';
-import MapScreen from '../screens/map/screens/MapScreen';
-import Index_profile from '../screens/profile/index_profile';
-import Index_fuel from '../screens/fuel/index_fuel';
-import AboutScreen from '../screens/AboutScreen';
-import TestScreen from '../screens/TestScreen';
+import TestScreen from '../modules/test/screens/TestScreen';
 import Colors from '../config/Colors';
+import {mapScreen} from '../modules/map/index';
+import {forgotPasswordScreen, loginScreen, profileScreen, signUpScreen} from '../modules/profile/index';
+import {pricesScreen, selectScreen} from "../modules/fuel/index";
 
 const MapStack = createStackNavigator({
-    Map: MapScreen,
+    Map: mapScreen,
 });
 
 MapStack.navigationOptions = {
@@ -28,9 +27,17 @@ MapStack.navigationOptions = {
     ),
 };
 
-const UserStack = createStackNavigator({
-    User: Index_profile,
-});
+const UserStack = createStackNavigator(
+    {
+        Profile: {screen: profileScreen},
+        Login: {screen: loginScreen},
+        SingUp: {screen: signUpScreen},
+        ForgotPassword: {screen: forgotPasswordScreen}
+    },
+    {
+        initialRouteName: 'Login',
+    }
+);
 
 UserStack.navigationOptions = {
     tabBarLabel: 'Perfil',
@@ -42,9 +49,16 @@ UserStack.navigationOptions = {
     ),
 };
 
-const FuelStack = createStackNavigator({
-    Fuel: Index_fuel,
-});
+const FuelStack = createStackNavigator(
+    {
+        Prices: {screen: pricesScreen},
+        Select: {screen: selectScreen},
+
+    },
+    {
+        initialRouteName: 'Select',
+    }
+);
 
 FuelStack.navigationOptions = {
     tabBarLabel: 'Preços',
@@ -52,20 +66,6 @@ FuelStack.navigationOptions = {
         <TabBarIcon
             focused={focused}
             name={Platform.OS === 'ios' ? `local-gas-station${focused ? '' : '-outline'}` : 'local-gas-station'}
-        />
-    ),
-};
-
-const AboutStack = createStackNavigator({
-    About: AboutScreen,
-});
-
-AboutStack.navigationOptions = {
-    tabBarLabel: 'Sobre',
-    tabBarIcon: ({focused}) => (
-        <TabBarIcon
-            focused={focused}
-            name={Platform.OS === 'ios' ? `info${focused ? '' : '-outline'}` : 'info'}
         />
     ),
 };
@@ -79,22 +79,18 @@ TestStack.navigationOptions = {
     tabBarIcon: ({focused}) => (
         <TabBarIcon
             focused={focused}
-            name={Platform.OS === 'ios' ? `ios-information-circle${focused ? '' : '-outline'}` : 'md-information-circle'}
+            name={Platform.OS === 'ios' ? `info${focused ? '' : '-outline'}` : 'info'}
         />
     ),
 };
-
 
 export default createMaterialBottomTabNavigator({
     MapStack,
     FuelStack,
     UserStack,
-    // AboutStack,
     //TestStack
 }, {
     initialRouteName: 'MapStack',
-    //activeColor: Colors.tabIconSelected,
-    //inactiveColor: Colors.tabIconDefault,
     barStyle: {backgroundColor: Colors.tabBar},
 });
 
