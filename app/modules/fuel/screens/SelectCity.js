@@ -23,7 +23,7 @@ class SelectCity extends Component {
         super(props);
         this.state = {
             gas_stations: [],
-            idCity: null,
+            idCity: 0,
             status: false
         };
     }
@@ -41,6 +41,7 @@ class SelectCity extends Component {
     checkStatus() {
         const status = checkLoginStatus();
         this.setState({status: status});
+        console.log(this.state.status);
         return status
     }
 
@@ -49,8 +50,6 @@ class SelectCity extends Component {
     }
 
     render() {
-
-        console.log(this.state.status);
 
         if (this.state.status === false) {
             return (
@@ -62,9 +61,7 @@ class SelectCity extends Component {
                             <Paragraph>Faça login e clique no botão abaixo para recarregar página</Paragraph>
                         </Card.Content>
                         <Card.Actions>
-                            <Button onPress={() => {
-                            }}
-                            >
+                            <Button onPress={() => this.checkStatus()}>
                                 <Icon
                                     name={"reload"}
                                     color='#FE5722'
@@ -76,28 +73,30 @@ class SelectCity extends Component {
                 </View>
             );
         }
-        return (
-            <View style={styles.container}>
-                <Title>Cidades</Title>
-                <Card style={styles.card}>
-                    <Paragraph>Selecione uma cidade....</Paragraph>
-                    <Picker
-                        iosHeader="Cidade"
-                        selectedValue={this.state.idCity}
-                        onValueChange={(idCity) => this.setState({idCity}, () => {
-                            this.selectCity(this.state.idCity)
-                        })}
-                        style={styles.picker}
-                        itemStyle={{backgroundColor: 'white', marginLeft: 0, paddingLeft: 15}}
-                        itemTextStyle={{fontSize: 18, color: 'white'}}
-                    >
-                        {Cities.cities.map((item) => {
-                            return (< Picker.Item label={item.label} value={item.key} key={item.key}/>);
-                        })}
-                    </Picker>
-                </Card>
-            </View>
-        );
+        else {
+            return (
+                <View style={styles.container}>
+                    <Title>Cidades</Title>
+                    <Card style={styles.card}>
+                        <Paragraph>Selecione uma cidade....</Paragraph>
+                        <Picker
+                            iosHeader="Cidade"
+                            selectedValue={this.state.idCity}
+                            onValueChange={(idCity) => this.setState({idCity}, () => {
+                                this.selectCity(this.state.idCity)
+                            })}
+                            style={styles.picker}
+                            itemStyle={{backgroundColor: 'white', marginLeft: 0, paddingLeft: 15}}
+                            itemTextStyle={{fontSize: 18, color: 'white'}}
+                        >
+                            {Cities.cities.map((item) => {
+                                return (< Picker.Item label={item.label} value={item.key} key={item.key}/>);
+                            })}
+                        </Picker>
+                    </Card>
+                </View>
+            );
+        }
     }
 
 

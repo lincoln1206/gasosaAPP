@@ -14,6 +14,12 @@
 > Com um celular android no modo debug ou emulador de android no pc , 
 dê o comando 'npm run android' na pasta raiz do aplicativo.
 
+# Update - 11/11/2018
+## Novidades:
+> Correção de BUGS :
+> + Botão de "Ir Até" na tela de preços agora está funcional
+> + Botão de recarregar na tela de selecionar cidades agora está funcional
+
 # Update - 05/11/2018
 ## Novidades:
 > + Implantação de Redux Store

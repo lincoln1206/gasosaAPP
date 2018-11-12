@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import {ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet, Text , View} from 'react-native';
 import {Button, Card, Paragraph, Title,} from 'react-native-paper';
 import {connect} from "react-redux";
-import {bindActionCreators} from "redux";
-import {getIdCity} from "../redux/actions";
 import {data} from '../../../../App'
-import {fetchMarkerData} from "../../map/api";
+import {fetchMarkerData, goToLocation} from "../../map/api";
 import Icon from 'react-native-vector-icons/Entypo';
 
 class Prices extends Component {
@@ -45,43 +43,45 @@ class Prices extends Component {
     render() {
 
         return (
-            <ScrollView style={{backgroundColor: '#FE5722'}}>
-                <Title>  {this.state.cityName}</Title>
-                {
-                    this.state.gas_stations.map((gas_station) => (
-                        <Card
-                            key={`${gas_station}${Date.now()}`}
-                            style={[styles.card, {backgroundColor: gasStationColor(gas_station.IconMarker.substr(40, gas_station.IconMarker.length))}]}>
-                            <Card.Content>
-                                <Title>{gas_station.NomePosto}</Title>
-                                <Paragraph>Bandeira : {gas_station.Bandeira}</Paragraph>
-                                <Paragraph>Álcool : {gas_station.ValorAlcool} Álcool cartão
-                                    : {gas_station.ValorAlcoolCartao}</Paragraph>
-                                <Paragraph>Diesel : {gas_station.ValorDiesel} Diesel cartão
-                                    : {gas_station.ValorDieselCartao}</Paragraph>
-                                <Paragraph>Diesel S10 : {gas_station.ValorDieselS10} Diesel S10 cartão
-                                    : {gas_station.ValorDieselS10Cartao}</Paragraph>
-                                <Paragraph>GNV : {gas_station.ValorGNV} GNV cartão
-                                    : {gas_station.ValorGNVCartao}</Paragraph>
-                                <Paragraph>Gasolina : {gas_station.ValorGasolina} Gasolina cartão
-                                    : {gas_station.ValorGasolinaCartao}</Paragraph>
-                                <Paragraph>Gasolina Aditivada : {gas_station.ValorGasolinaAditivada}</Paragraph>
-                                <Paragraph>Gasolina Aditivada cartão
-                                    : {gas_station.ValorGasolinaAditivadaCartao}</Paragraph>
-                            </Card.Content>
-                            <Card.Actions>
-                                <Button onPress={() => {
-                                }}>
-                                    <Icon
-                                        name={"direction"}
-                                        color='#FE5722'
-                                        size={25}
-                                    />
-                                    Ir até
-                                </Button>
-                            </Card.Actions>
-                        </Card>
-                    ))}
+            <ScrollView>
+                <View style = {styles.container}>
+                    <Title>  {this.state.cityName}</Title>
+                    {
+                        this.state.gas_stations.map((gas_station) => (
+                            <Card
+                                key={`${gas_station}${Date.now()}`}
+                                style={[styles.card, {backgroundColor: gasStationColor(gas_station.IconMarker.substr(40, gas_station.IconMarker.length))}]}>
+                                <Card.Content>
+                                    <Title>{gas_station.NomePosto}</Title>
+                                    <Paragraph>Bandeira : {gas_station.Bandeira}</Paragraph>
+                                    <Paragraph>Álcool : {gas_station.ValorAlcool} Álcool cartão
+                                        : {gas_station.ValorAlcoolCartao}</Paragraph>
+                                    <Paragraph>Diesel : {gas_station.ValorDiesel} Diesel cartão
+                                        : {gas_station.ValorDieselCartao}</Paragraph>
+                                    <Paragraph>Diesel S10 : {gas_station.ValorDieselS10} Diesel S10 cartão
+                                        : {gas_station.ValorDieselS10Cartao}</Paragraph>
+                                    <Paragraph>GNV : {gas_station.ValorGNV} GNV cartão
+                                        : {gas_station.ValorGNVCartao}</Paragraph>
+                                    <Paragraph>Gasolina : {gas_station.ValorGasolina} Gasolina cartão
+                                        : {gas_station.ValorGasolinaCartao}</Paragraph>
+                                    <Paragraph>Gasolina Aditivada : {gas_station.ValorGasolinaAditivada}</Paragraph>
+                                    <Paragraph>Gasolina Aditivada cartão
+                                        : {gas_station.ValorGasolinaAditivadaCartao}</Paragraph>
+                                </Card.Content>
+                                <Card.Actions>
+                                    <Button onPress={() => goToLocation(gas_station.Latitude, gas_station.Longitude)}>
+                                        <Icon
+                                            name="direction"
+                                            color='#FE5722'
+                                            size={25}
+                                        >
+                                            <Text style={styles.label}>Ir até</Text>
+                                        </Icon>
+                                    </Button>
+                                </Card.Actions>
+                            </Card>
+                        ))}
+                </View>
             </ScrollView>);
     }
 }
@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
     },
     container: {
         flex: 1,
+ //       color: '#FFFFFF',
     },
     content: {
         padding: 4,
@@ -126,11 +127,5 @@ const mapStateToProps = (state) => {
     return {prices}
 };
 
-const mapDispatchToProps = dispatch => (
-    bindActionCreators({
-        getIdCity,
-    }, dispatch)
-);
-
-export default connect(mapStateToProps, mapDispatchToProps)(Prices);
+export default connect(mapStateToProps)(Prices);
 

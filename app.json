@@ -42,6 +42,7 @@
       "permissions": [
         "ACCESS_FINE_LOCATION"
       ]
-    }
+    },
+    "githubUrl": "https://github.com/lincoln1206/gasosaAPP"
   }
 }
