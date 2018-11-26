@@ -1,5 +1,5 @@
-import {auth, provider} from "../../config/firebase";
-import {data} from '../../../App'
+import {auth, provider} from "../../../config/firebase";
+import {data} from '../../../../App'
 
 export function createUser(name, email, password) {
     return new Promise(resolve => {

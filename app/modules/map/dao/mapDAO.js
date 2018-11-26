@@ -1,8 +1,8 @@
 import React from 'react';
 import {Linking} from 'react-native';
-import * as googleConfig from "../../config/Constants";
-import Cities from '../../components/Cities'
-import Images from "../../components/Images";
+import * as googleConfig from "../../../config/Constants";
+import Cities from '../../../components/Cities'
+import Images from "../../../components/Images";
 
 export async function fetchMarkerData(idCity) {
     const url = `http://portaldacidadania.pb.gov.br/UtilidadePublica/Procon/Posto/ListarJson?idCidadePesquisaSelecionada=${idCity}`;
@@ -53,6 +53,7 @@ export function getIdCity(cityName) {
     }
 }
 
+//FACTORY METHOD
 export function getMarkerIcon(markerName) {
     const images = Images.images;
 

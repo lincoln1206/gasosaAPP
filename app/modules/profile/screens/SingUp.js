@@ -1,10 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text} from 'react-native'
+import {StyleSheet} from 'react-native'
 import {Button, Container, Form, Input, Item, Label} from 'native-base'
-import *as fb from "../api";
+import *as fb from "../dao/userDAO";
 import {h, totalSize, w} from "../../../config/Layout";
 import {Constants} from "expo";
 import {connect} from 'react-redux';
+import {MonoText as Text} from '../../../components/StyledText'
 
 class SingUp extends React.Component {
 

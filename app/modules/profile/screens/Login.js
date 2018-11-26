@@ -1,7 +1,7 @@
 import React from 'react';
-import {Image, StyleSheet, Text, TouchableOpacity} from 'react-native'
+import {Image, StyleSheet, TouchableOpacity} from 'react-native'
 import {Button, Container, Form, Input, Item, Label} from 'native-base'
-import * as fb from "../api";
+import * as fb from "../dao/userDAO";
 import * as firebase from "../../../../app/config/firebase";
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {Constants} from 'expo';
@@ -9,6 +9,7 @@ import {h, totalSize, w} from '../../../config/Layout';
 import {connect} from 'react-redux';
 import {loggedIn} from '../redux/actions'
 import {bindActionCreators} from "redux";
+import {MonoText as Text} from '../../../components/StyledText'
 
 const appLogo = require('../../../assets/images/icon.png');
 

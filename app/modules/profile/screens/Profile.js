@@ -1,12 +1,13 @@
 import React from 'react';
-import {Image, StyleSheet, Text} from 'react-native'
+import {Image, StyleSheet} from 'react-native'
 import {Button, Container, Form, Label} from 'native-base'
 import {totalSize} from '../../../config/Layout';
 import {auth} from "../../../config/firebase";
-import * as fb from "../api";
+import * as fb from "../dao/userDAO";
 import {connect} from 'react-redux';
 import {bindActionCreators} from "redux";
 import {loggedOut} from "../redux/actions";
+import {MonoText as Text} from '../../../components/StyledText'
 
 class Profile extends React.Component {
 

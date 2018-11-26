@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
-import {ScrollView, StyleSheet, Text , View} from 'react-native';
+import {ScrollView, StyleSheet, View} from 'react-native';
 import {Button, Card, Paragraph, Title,} from 'react-native-paper';
 import {connect} from "react-redux";
 import {data} from '../../../../App'
-import {fetchMarkerData, goToLocation} from "../../map/api";
+import {fetchMarkerData, goToLocation} from "../../map/dao/mapDAO";
 import Icon from 'react-native-vector-icons/Entypo';
+import Singleton_CityID from '../Singleton_CityID';
+import {MonoText as Text} from '../../../components/StyledText'
+
+let commonData = Singleton_CityID.getInstance();
 
 class Prices extends Component {
     static navigationOptions = () => ({
@@ -28,7 +32,12 @@ class Prices extends Component {
         this.setState({gas_stations: []});
 
         const state = data.getState();
+        //MVC (REDUX)
         const idCity = state.fuelReducer.prices.idCity;
+        console.log("MVC (REDUX) :" + idCity);
+        //Singleton
+        let cityID = commonData.getCityID();
+        console.log("Singleton :" + cityID);
         const gas_stations = await(fetchMarkerData(idCity));
 
         const cityName = gas_stations[0].Cidade;
@@ -50,6 +59,7 @@ class Prices extends Component {
                         this.state.gas_stations.map((gas_station) => (
                             <Card
                                 key={`${gas_station}${Date.now()}`}
+                                //FACTORY METHOD - APLICAÇÃO
                                 style={[styles.card, {backgroundColor: gasStationColor(gas_station.IconMarker.substr(40, gas_station.IconMarker.length))}]}>
                                 <Card.Content>
                                     <Title>{gas_station.NomePosto}</Title>
@@ -86,7 +96,7 @@ class Prices extends Component {
     }
 }
 
-
+//FACTORY METHOD
 function gasStationColor(color) {
     switch (color) {
         case 'Amarelo.png' :

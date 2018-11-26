@@ -6,8 +6,11 @@ import {removeAll, setIdCity} from "../redux/actions";
 import {bindActionCreators} from "redux";
 import {Constants} from 'expo';
 import {Button, Card, Paragraph, Title} from 'react-native-paper';
-import {checkLoginStatus} from "../../profile/api";
+import {checkLoginStatus} from "../../profile/dao/userDAO";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Singleton_CityID from '../Singleton_CityID';
+
+let commonData = Singleton_CityID.getInstance();
 
 class SelectCity extends Component {
 
@@ -32,7 +35,10 @@ class SelectCity extends Component {
         const {navigate} = this.props.navigation;
 
         this.props.removeAll();
+        //MVC (REDUX)
         this.props.setIdCity(idCity);
+        //Singleton
+        commonData.setCityID(idCity);
 
         (idCity !== null) ? ((navigate('Prices'))) : alert('Escolha uma cidade!');
         this.setState({idCity: 0, cityName: null, gas_stations: []})

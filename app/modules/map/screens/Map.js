@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, View} from 'react-native';
 import {Constants, Location, MapView, Permissions} from 'expo';
 import Icon from 'react-native-vector-icons/Entypo';
-import * as map from '../api'
+import * as map from '../dao/mapDAO'
 import * as option from '../../../config/Constants'
 import {connect} from 'react-redux';
 import {addMarker, setDefaultCity} from '../redux/actions'
 import {bindActionCreators} from 'redux';
+import {MonoText as Text} from '../../../components/StyledText'
 
 class Map extends Component {
     static navigationOptions = {
@@ -125,11 +126,12 @@ class Map extends Component {
                             };
 
                             const markerName = marker.IconMarker.substr(29, marker.IconMarker.length);
+                            //FACTORY METHOD - APLICAÇÃO
                             const icon = map.getMarkerIcon(markerName);
 
                             return (
                                 <MapView.Marker
-                                    key={`${marker.id}${Date.now()}`}
+                                    key={marker.id}
                                     coordinate={coords}
                                     title={marker.NomePosto}
                                     image={icon}

@@ -3,6 +3,7 @@ import {Icon} from 'expo';
 
 import Colors from '../config/Colors';
 
+//ABSTRACT FACTORY
 export default class TabBarIcon extends React.Component {
   render() {
     return (

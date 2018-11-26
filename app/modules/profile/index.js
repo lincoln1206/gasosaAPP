@@ -1,4 +1,4 @@
-import * as actions from './api';
+import * as actions from './dao/userDAO';
 import * as actionTypes from './redux/actionTypes';
 import reducer from './reducer';
 import profileScreen from './screens/Profile';
