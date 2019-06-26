@@ -7,6 +7,7 @@ import {fetchMarkerData, goToLocation} from "../../map/dao/mapDAO";
 import Icon from 'react-native-vector-icons/Entypo';
 import Singleton_CityID from '../Singleton_CityID';
 import {MonoText as Text} from '../../../components/StyledText'
+import {WebView} from 'react-native';
 
 let commonData = Singleton_CityID.getInstance();
 
@@ -24,25 +25,18 @@ class Prices extends Component {
         this.state = {
             idCity: null,
             cityName: null,
-            gas_stations: []
+            gas_stations: [],
+            url: ''
         };
     }
 
-    async fetchData() {
-        this.setState({gas_stations: []});
+    fetchData() {
 
         const state = data.getState();
-        //MVC (REDUX)
         const idCity = state.fuelReducer.prices.idCity;
-        console.log("MVC (REDUX) :" + idCity);
-        //Singleton
-        let cityID = commonData.getCityID();
-        console.log("Singleton :" + cityID);
-        const gas_stations = await(fetchMarkerData(idCity));
+        const url = `http://portaldacidadania.pb.gov.br/UtilidadePublica/Procon/Posto/Listar?idCidadePesquisaSelecionada=${idCity}`;
 
-        const cityName = gas_stations[0].Cidade;
-
-        this.setState({gas_stations: gas_stations, cityName: cityName});
+        this.setState({url: url});
     }
 
     componentWillMount() {
@@ -52,47 +46,12 @@ class Prices extends Component {
     render() {
 
         return (
-            <ScrollView>
-                <View style = {styles.container}>
-                    <Title>  {this.state.cityName}</Title>
-                    {
-                        this.state.gas_stations.map((gas_station) => (
-                            <Card
-                                key={`${gas_station}${Date.now()}`}
-                                //FACTORY METHOD - APLICAÇÃO
-                                style={[styles.card, {backgroundColor: gasStationColor(gas_station.IconMarker.substr(40, gas_station.IconMarker.length))}]}>
-                                <Card.Content>
-                                    <Title>{gas_station.NomePosto}</Title>
-                                    <Paragraph>Bandeira : {gas_station.Bandeira}</Paragraph>
-                                    <Paragraph>Álcool : {gas_station.ValorAlcool} Álcool cartão
-                                        : {gas_station.ValorAlcoolCartao}</Paragraph>
-                                    <Paragraph>Diesel : {gas_station.ValorDiesel} Diesel cartão
-                                        : {gas_station.ValorDieselCartao}</Paragraph>
-                                    <Paragraph>Diesel S10 : {gas_station.ValorDieselS10} Diesel S10 cartão
-                                        : {gas_station.ValorDieselS10Cartao}</Paragraph>
-                                    <Paragraph>GNV : {gas_station.ValorGNV} GNV cartão
-                                        : {gas_station.ValorGNVCartao}</Paragraph>
-                                    <Paragraph>Gasolina : {gas_station.ValorGasolina} Gasolina cartão
-                                        : {gas_station.ValorGasolinaCartao}</Paragraph>
-                                    <Paragraph>Gasolina Aditivada : {gas_station.ValorGasolinaAditivada}</Paragraph>
-                                    <Paragraph>Gasolina Aditivada cartão
-                                        : {gas_station.ValorGasolinaAditivadaCartao}</Paragraph>
-                                </Card.Content>
-                                <Card.Actions>
-                                    <Button onPress={() => goToLocation(gas_station.Latitude, gas_station.Longitude)}>
-                                        <Icon
-                                            name="direction"
-                                            color='#FE5722'
-                                            size={25}
-                                        >
-                                            <Text style={styles.label}>Ir até</Text>
-                                        </Icon>
-                                    </Button>
-                                </Card.Actions>
-                            </Card>
-                        ))}
-                </View>
-            </ScrollView>);
+            <WebView
+                source={{uri: this.state.url, removeHeader: true}}
+                style={{marginTop: -80, marginBottom: -700, backgroundColor: 'transparent'}}
+                automaticallyAdjustContentInsets={false}
+                hideHeader={true}
+            />);
     }
 }
 

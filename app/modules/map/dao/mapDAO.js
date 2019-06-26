@@ -4,25 +4,24 @@ import * as googleConfig from "../../../config/Constants";
 import Cities from '../../../components/Cities'
 import Images from "../../../components/Images";
 
-export async function fetchMarkerData(idCity) {
-    const url = `http://portaldacidadania.pb.gov.br/UtilidadePublica/Procon/Posto/ListarJson?idCidadePesquisaSelecionada=${idCity}`;
+export async function fetchMarkerData(latitude, longitude) {
+    const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&type=gas_station&rankby=distance&keyword="posto"or"gasolina"&key=${googleConfig.GOOGLE_API_KEY}`;
+    console.log(url);
 
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: new Headers({
-            'Accept': 'application/json',
-            'Accept-Language': 'pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3',
-            'Content-Type': 'application/json; charset=utf-8',
-            'X-Requested-With': 'XMLHttpRequest',
-            'Content-Length': '70',
-            'Connection': 'keep-alive'
-        }),
-        body: JSON.stringify({
-            idCidadePesquisaSelecionada: idCity
+    const response = await fetch(url)
+        .then((response) => response.json())
+        .then((responseJson) => {
+            this.setState({
+                isLoading: false,
+                markers: responseJson.results,
+            });
         })
-    })
-        .catch((error) => console.log(error));
+        .catch((error) => {
+            console.log(error);
+        });
     const json = await response.json();
+
+    console.log(json);
 
     return (json);
 }

@@ -8,6 +8,7 @@ import {connect} from 'react-redux';
 import {addMarker, setDefaultCity} from '../redux/actions'
 import {bindActionCreators} from 'redux';
 import {MonoText as Text} from '../../../components/StyledText'
+import * as googleConfig from "../../../config/Constants";
 
 class Map extends Component {
     static navigationOptions = {
@@ -57,9 +58,24 @@ class Map extends Component {
 
     async fetchData(latitude, longitude) {
         const idCity = await (map.fetchCity(latitude, longitude));
-        const markers = await (map.fetchMarkerData(idCity));
+        this.fetchMarkerData(latitude, longitude);
         console.log(idCity);
-        this.setState({markers: markers, idCity: idCity});
+        this.setState({idCity: idCity});
+    }
+
+    fetchMarkerData(latitude, longitude) {
+        const url = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&type=gas_station&rankby=distance&keyword="posto"or"gasolina"&key=${googleConfig.GOOGLE_API_KEY}`;
+        console.log(url);
+        fetch(url)
+            .then((response) => response.json())
+            .then((responseJson) => {
+                this.setState({
+                    markers: responseJson.results,
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     }
 
     componentWillMount() {
@@ -118,45 +134,29 @@ class Map extends Component {
                         followsUserLocation={true}
                         onPress={e => console.log(e.nativeEvent)}
                     >
-                        {markers === 'undefined' ? 0 : markers.map((marker) => {
+                        {markers === 'undefined' ? 0 : markers.map((marker, index) => {
 
                             const coords = {
-                                latitude: marker.Latitude,
-                                longitude: marker.Longitude,
+                                latitude: marker.geometry.location.lat,
+                                longitude: marker.geometry.location.lng,
                             };
-
-                            const markerName = marker.IconMarker.substr(29, marker.IconMarker.length);
-                            //FACTORY METHOD - APLICAÇÃO
-                            const icon = map.getMarkerIcon(markerName);
 
                             return (
                                 <MapView.Marker
-                                    key={marker.id}
+                                    key={index}
                                     coordinate={coords}
-                                    title={marker.NomePosto}
-                                    image={icon}
+                                    title={marker.name}
+                                    image={marker.icon}
                                     onCalloutPress={() => map.goToLocation(coords.latitude, coords.longitude)}
                                     style={styles.marker}>
                                     <MapView.Callout>
                                         <View style={styles.marker}>
-                                            <Text style={styles.label}>{marker.NomePosto}</Text>
-                                            <Text>Bandeira : {marker.Bandeira}</Text>
-                                            <Text>Álcool : {marker.ValorAlcool} Álcool cartão
-                                                : {marker.ValorAlcoolCartao}</Text>
-                                            <Text>Diesel : {marker.ValorDiesel} Diesel cartão
-                                                : {marker.ValorDieselCartao}</Text>
-                                            <Text>Diesel S10 : {marker.ValorDieselS10} Diesel S10 cartão
-                                                : {marker.ValorDieselS10Cartao}</Text>
-                                            <Text>GNV : {marker.ValorGNV} GNV cartão : {marker.ValorGNVCartao}</Text>
-                                            <Text>Gasolina : {marker.ValorGasolina} Gasolina cartão
-                                                : {marker.ValorGasolinaCartao}</Text>
-                                            <Text>Gasolina Aditivada : {marker.ValorGasolinaAditivada}</Text>
-                                            <Text>Gasolina Aditivada cartão
-                                                : {marker.ValorGasolinaAditivadaCartao}</Text>
+                                            <Text style={styles.label}>{marker.name}</Text>
+                                            <Text>Local : {marker.vicinity}</Text>
                                             <Icon
                                                 name={Platform.OS === "ios" ? "direction" : "direction"}
                                                 color='#FE5722'
-                                                size={25}
+                                                size={15}
                                             >
                                                 <Text style={styles.label}>Ir até</Text>
                                             </Icon>
